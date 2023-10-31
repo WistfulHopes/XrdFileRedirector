@@ -1,0 +1,5 @@
+.idea/
+XrdFileRedirector/.github
+XrdFileRedirector/obj
+*.ps1
+*.targets
