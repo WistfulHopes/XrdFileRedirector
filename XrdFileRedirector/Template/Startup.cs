@@ -6,8 +6,6 @@
 using Reloaded.Hooks.ReloadedII.Interfaces;
 using Reloaded.Mod.Interfaces;
 using Reloaded.Mod.Interfaces.Internal;
-using XrdFileRedirector.Template.Configuration;
-using XrdFileRedirector.Configuration;
 
 namespace XrdFileRedirector.Template;
 
@@ -22,12 +20,7 @@ public class Startup : IMod
     /// Provides access to the mod loader API.
     /// </summary>
     private IModLoader _modLoader = null!;
-
-    /// <summary>
-    /// Stores the contents of your mod's configuration. Automatically updated by template.
-    /// </summary>
-    private Config _configuration = null!;
-
+    
     /// <summary>
     /// An interface to Reloaded's the function hooks/detours library.
     /// See: https://github.com/Reloaded-Project/Reloaded.Hooks
@@ -54,14 +47,7 @@ public class Startup : IMod
         _modConfig = (IModConfig)modConfig;
         _logger = (ILogger)_modLoader.GetLogger();
         _modLoader.GetController<IReloadedHooks>()?.TryGetTarget(out _hooks!);
-
-        // Your config file is in Config.json.
-        // Need a different name, format or more configurations? Modify the `Configurator`.
-        // If you do not want a config, remove Configuration folder and Config class.
-        var configurator = new Configurator(_modLoader.GetModConfigDirectory(_modConfig.ModId));
-        _configuration = configurator.GetConfiguration<Config>(0);
-        _configuration.ConfigurationUpdated += OnConfigurationUpdated;
-
+        
         // Please put your mod code in the class below,
         // use this class for only interfacing with mod loader.
         _mod = new Mod(new ModContext()
@@ -71,20 +57,7 @@ public class Startup : IMod
             ModLoader = _modLoader,
             ModConfig = _modConfig,
             Owner = this,
-            Configuration = _configuration,
         });
-    }
-
-    private void OnConfigurationUpdated(IConfigurable obj)
-    {
-        /*
-            This is executed when the configuration file gets 
-            updated by the user at runtime.
-        */
-
-        // Replace configuration with new.
-        _configuration = (Config)obj;
-        _mod.ConfigurationUpdated(_configuration);
     }
 
     /* Mod loader actions. */

@@ -1,6 +1,5 @@
 ﻿using Reloaded.Mod.Interfaces;
 using IReloadedHooks = Reloaded.Hooks.ReloadedII.Interfaces.IReloadedHooks;
-using XrdFileRedirector.Configuration;
 
 namespace XrdFileRedirector.Template;
 
@@ -23,12 +22,7 @@ public class ModContext
     /// Provides access to the Reloaded logger.
     /// </summary>
     public ILogger Logger { get; set; } = null!;
-
-    /// <summary>
-    /// Provides access to this mod's configuration.
-    /// </summary>
-    public Config Configuration { get; set; } = null!;
-
+    
     /// <summary>
     /// Configuration of this mod.
     /// </summary>

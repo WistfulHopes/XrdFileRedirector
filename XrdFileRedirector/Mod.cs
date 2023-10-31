@@ -2,7 +2,6 @@
 using Reloaded.Mod.Interfaces;
 using Reloaded.Mod.Interfaces.Internal;
 using XrdFileRedirector.Template;
-using XrdFileRedirector.Configuration;
 
 namespace XrdFileRedirector;
 
@@ -33,11 +32,6 @@ public class Mod : ModBase // <= Do not Remove.
     private readonly IMod _owner;
 
     /// <summary>
-    /// Provides access to this mod's configuration.
-    /// </summary>
-    private Config _configuration;
-
-    /// <summary>
     /// The configuration of the currently executing mod.
     /// </summary>
     private readonly IModConfig _modConfig;
@@ -45,14 +39,13 @@ public class Mod : ModBase // <= Do not Remove.
     private string _contentPath;
     private string _configPath;
     private string _modPath;
-    
+
     public Mod(ModContext context)
     {
         _modLoader = context.ModLoader;
         _hooks = context.Hooks;
         _logger = context.Logger;
         _owner = context.Owner;
-        _configuration = context.Configuration;
         _modConfig = context.ModConfig;
 
 
@@ -89,37 +82,27 @@ public class Mod : ModBase // <= Do not Remove.
 
         var scriptPackages = _modLoader.GetDirectoryForModId(config.ModId) + @"\ScriptPackages.txt";
         
-        if (!File.Exists(_configPath)) return;
+        if (!File.Exists(_modPath + @"\DefaultEngine.ini")) return;
         if (!File.Exists(scriptPackages)) return;
 
         int lineCounter = 0;
 
-        var sr = new StreamReader(_configPath);
+        var sr = new StreamReader(_modPath + @"\DefaultEngine.ini");
         do
         {
             lineCounter++;
         } while (sr.ReadLine() != "+NonNativePackages=REDGameContent");
 
         var packages = File.ReadAllLines(scriptPackages).ToList();
-        var allLines = File.ReadAllLines(_configPath).ToList();
+        var allLines = File.ReadAllLines(_modPath + @"\DefaultEngine.ini").ToList();
         foreach (var package in packages)
         {
             allLines.Insert(lineCounter, "+NativePackages=" + package);
             lineCounter++;
         }
-        File.WriteAllLines(_modPath + @"\Redirector\DefaultEngine.ini" , allLines.ToArray() );
+        File.WriteAllLines(_configPath , allLines.ToArray() );
     }
     
-    #region Standard Overrides
-    public override void ConfigurationUpdated(Config configuration)
-    {
-        // Apply settings from configuration.
-        // ... your code here.
-        _configuration = configuration;
-        _logger.WriteLine($"[{_modConfig.ModId}] Config Updated: Applying");
-    }
-    #endregion
-
     #region For Exports, Serialization etc.
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
     public Mod() { }

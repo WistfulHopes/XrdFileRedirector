@@ -2,7 +2,7 @@
   "ModId": "ggrev2.core.xrdfileredirector",
   "ModName": "XrdFileRedirector",
   "ModAuthor": "WistfulHopes",
-  "ModVersion": "0.1.0",
+  "ModVersion": "1.0.2",
   "ModDescription": "Redirects files for Guilty Gear -Xrd.",
   "ModDll": "XrdFileRedirector.dll",
   "ModIcon": "Preview.png",
@@ -10,12 +10,26 @@
   "ModR2RManagedDll64": "x64/XrdFileRedirector.dll",
   "ModNativeDll32": "",
   "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
   "IsLibrary": false,
   "ReleaseMetadataFileName": "XrdFileRedirector.ReleaseMetadata.json",
-  "PluginData": {},
+  "PluginData": {
+    "GitHubRelease": {
+      "UserName": "WistfulHopes",
+      "RepositoryName": "XrdFileRedirector",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    }
+  },
   "IsUniversalMod": false,
-  "ModDependencies": [ "reloaded.sharedlib.hooks" , "reloaded.universal.redirector" ],
+  "ModDependencies": [
+    "reloaded.sharedlib.hooks"
+  ],
   "OptionalDependencies": [],
-  "SupportedAppId": [],
+  "SupportedAppId": [
+    "guiltygearxrd.exe"
+  ],
   "ProjectUrl": ""
 }
