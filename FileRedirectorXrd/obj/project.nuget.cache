@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "RT2MKbjeWiM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\wistf\\GitHub\\XrdFileRedirector\\FileRedirectorXrd\\FileRedirectorXrd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wistf\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.3\\microsoft.net.illink.tasks.9.0.3.nupkg.sha512",
+    "C:\\Users\\wistf\\.nuget\\packages\\reloaded.hooks.definitions\\1.11.0\\reloaded.hooks.definitions.1.11.0.nupkg.sha512",
+    "C:\\Users\\wistf\\.nuget\\packages\\reloaded.mod.interfaces\\2.4.0\\reloaded.mod.interfaces.2.4.0.nupkg.sha512",
+    "C:\\Users\\wistf\\.nuget\\packages\\reloaded.sharedlib.hooks\\1.9.0\\reloaded.sharedlib.hooks.1.9.0.nupkg.sha512",
+    "C:\\Users\\wistf\\.nuget\\packages\\reloaded.universal.redirector.interfaces\\1.1.0\\reloaded.universal.redirector.interfaces.1.1.0.nupkg.sha512",
+    "C:\\Users\\wistf\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.17\\microsoft.netcore.app.ref.9.0.17.nupkg.sha512",
+    "C:\\Users\\wistf\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.17\\microsoft.windowsdesktop.app.ref.9.0.17.nupkg.sha512",
+    "C:\\Users\\wistf\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.17\\microsoft.aspnetcore.app.ref.9.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

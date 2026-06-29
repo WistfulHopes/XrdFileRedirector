@@ -1,4 +1,6 @@
-﻿namespace XrdFileRedirector.Template;
+﻿using ggrev2.core.redirector.Configuration;
+
+namespace ggrev2.core.redirector.Template;
 
 /// <summary>
 /// Base class for implementing mod functionality.
@@ -21,7 +23,7 @@ public class ModBase
     public virtual void Suspend()
     {
         /*  Some tips if you wish to support this (CanSuspend == true)
-         
+
             A. Undo memory modifications.
             B. Deactivate hooks. (Reloaded.Hooks Supports This!)
         */
@@ -34,7 +36,7 @@ public class ModBase
     public virtual void Unload()
     {
         /*  Some tips if you wish to support this (CanUnload == true).
-         
+
             A. Execute Suspend(). [Suspend should be reusable in this method]
             B. Release any unmanaged resources, e.g. Native memory.
         */
@@ -45,7 +47,6 @@ public class ModBase
     /// </summary>
     public virtual void Disposing()
     {
-
     }
 
     /// <summary>
@@ -54,9 +55,15 @@ public class ModBase
     public virtual void Resume()
     {
         /*  Some tips if you wish to support this (CanSuspend == true)
-         
+
             A. Redo memory modifications.
             B. Re-activate hooks. (Reloaded.Hooks Supports This!)
         */
+    }
+
+    public virtual void ConfigurationUpdated(Config configuration)
+    {
+        // Apply settings from configuration.
+        // ... your code here.
     }
 }

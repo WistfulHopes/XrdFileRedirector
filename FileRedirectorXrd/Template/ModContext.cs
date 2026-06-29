@@ -1,7 +1,8 @@
 ﻿using Reloaded.Mod.Interfaces;
 using IReloadedHooks = Reloaded.Hooks.ReloadedII.Interfaces.IReloadedHooks;
+using ggrev2.core.redirector.Configuration;
 
-namespace XrdFileRedirector.Template;
+namespace ggrev2.core.redirector.Template;
 
 /// <summary>
 /// Represents information passed in from the mod loader template to the implementing mod.
@@ -22,7 +23,12 @@ public class ModContext
     /// Provides access to the Reloaded logger.
     /// </summary>
     public ILogger Logger { get; set; } = null!;
-    
+
+    /// <summary>
+    /// Provides access to this mod's configuration.
+    /// </summary>
+    public Config Configuration { get; set; } = null!;
+
     /// <summary>
     /// Configuration of this mod.
     /// </summary>

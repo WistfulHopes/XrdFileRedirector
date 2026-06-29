@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XrdFileRedirector", "XrdFileRedirector\XrdFileRedirector.csproj", "{674B6A2F-4BA1-4BCB-AA81-10E685136628}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileRedirectorXrd", "FileRedirectorXrd\FileRedirectorXrd.csproj", "{510F1689-D2FE-4292-8A4F-F773CDE16BF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{674B6A2F-4BA1-4BCB-AA81-10E685136628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{674B6A2F-4BA1-4BCB-AA81-10E685136628}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{674B6A2F-4BA1-4BCB-AA81-10E685136628}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{674B6A2F-4BA1-4BCB-AA81-10E685136628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{510F1689-D2FE-4292-8A4F-F773CDE16BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{510F1689-D2FE-4292-8A4F-F773CDE16BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{510F1689-D2FE-4292-8A4F-F773CDE16BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{510F1689-D2FE-4292-8A4F-F773CDE16BF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
