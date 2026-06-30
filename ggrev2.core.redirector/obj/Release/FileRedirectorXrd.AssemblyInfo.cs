@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ggrev2.core.redirector")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52b31ac64298b12dcc7cbae9ee48bf73b9f1eeb4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b500e8c8e97827d42bfd58d9b1254ba44477275f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ggrev2.core.redirector")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ggrev2.core.redirector")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

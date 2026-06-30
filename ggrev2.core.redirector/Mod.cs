@@ -89,6 +89,11 @@ public class Mod : ModBase // <= Do not Remove.
                 @"\..\..\REDGame\Config");
         }
 
+        if (!Directory.Exists(_modLoader.GetDirectoryForModId("ggrev2.core.redirector") + @"\Config"))
+        {
+            Directory.CreateDirectory(_modLoader.GetDirectoryForModId("ggrev2.core.redirector") + @"\Config");
+        }
+        
         _engineIniPath = _modLoader.GetDirectoryForModId("ggrev2.core.redirector") + @"\Config\DefaultEngine.ini";
 
         File.Delete(_engineIniPath);
@@ -96,11 +101,6 @@ public class Mod : ModBase // <= Do not Remove.
                 Directory.GetParent(Directory.GetParent(_modLoader.GetAppConfig().AppLocation)!.ToString())!
                     .ToString()) + @"\REDGame\Config\DefaultEngine.ini",
             _engineIniPath, true);
-
-        if (!Directory.Exists(_modLoader.GetDirectoryForModId("ggrev2.core.redirector") + @"\Config"))
-        {
-            Directory.CreateDirectory(_modLoader.GetDirectoryForModId("ggrev2.core.redirector") + @"\Config");
-        }
     }
 
     private static void CachePathsImpl(nint @this)

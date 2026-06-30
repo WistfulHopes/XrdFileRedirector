@@ -1,0 +1,16 @@
+D:\Reloaded-II\Mods\FileRedirectorXrd\Preview.png
+D:\Reloaded-II\Mods\FileRedirectorXrd\ModConfig.json
+D:\Reloaded-II\Mods\FileRedirectorXrd\ggrev2.core.redirector.deps.json
+D:\Reloaded-II\Mods\FileRedirectorXrd\ggrev2.core.redirector.dll
+D:\Reloaded-II\Mods\FileRedirectorXrd\ggrev2.core.redirector.pdb
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.core.redirector.csproj.AssemblyReference.cache
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.core.redirector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.core.redirector.AssemblyInfoInputs.cache
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.core.redirector.AssemblyInfo.cs
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.core.redirector.csproj.CoreCompileInputs.cache
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.core.redirector.sourcelink.json
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.c.5005643B.Up2Date
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.core.redirector.dll
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\refint\ggrev2.core.redirector.dll
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ggrev2.core.redirector.pdb
+C:\Users\wistf\GitHub\XrdFileRedirector\ggrev2.core.redirector\obj\Release\ref\ggrev2.core.redirector.dll

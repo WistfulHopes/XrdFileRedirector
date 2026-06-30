@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RT2MKbjeWiM=",
+  "dgSpecHash": "EX3WZ463Idw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\wistf\\GitHub\\XrdFileRedirector\\FileRedirectorXrd\\FileRedirectorXrd.csproj",
+  "projectFilePath": "C:\\Users\\wistf\\GitHub\\XrdFileRedirector\\ggrev2.core.redirector\\ggrev2.core.redirector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wistf\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.3\\microsoft.net.illink.tasks.9.0.3.nupkg.sha512",
     "C:\\Users\\wistf\\.nuget\\packages\\reloaded.hooks.definitions\\1.11.0\\reloaded.hooks.definitions.1.11.0.nupkg.sha512",

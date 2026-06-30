@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileRedirectorXrd", "FileRedirectorXrd\FileRedirectorXrd.csproj", "{510F1689-D2FE-4292-8A4F-F773CDE16BF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ggrev2.core.redirector", "ggrev2.core.redirector\ggrev2.core.redirector.csproj", "{510F1689-D2FE-4292-8A4F-F773CDE16BF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
